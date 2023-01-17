@@ -6,6 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box model.</title>
 </head>
+<style>
+    body{
+        background-color: rgba(100, 148, 237, 0.491);
+        text-align: justify;
+        text-indent: 20px;
+    }
+    main{
+        background-color: white;
+        width: 1300px;
+        margin: auto;
+    }
+    header{
+        padding: 10px;
+    }
+    h1{
+        background-color: rgba(100, 148, 237, 0.491);
+        text-align: center;
+        height: 40px;
+        width: 700px;
+
+        border: 2px solid blue;
+
+        padding: 10px 20px;
+
+        margin: 20px auto 40px auto;
+
+        outline: 2px dashed rgba(0, 0, 255, 0.572);
+    }
+    a{
+        background-color:white;
+        text-align: center;
+
+        padding: 5px auto 30px auto;
+
+        margin: auto;
+
+    }
+    p{
+        padding: 0px 20px 5px 20px;
+    }
+
+</style>
 <body>
     <main>
         <header>
@@ -14,13 +56,36 @@
             </h1>
         </header>
 
-        <h1>
-            Medidas
-        </h1>
-
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis quis ullam facere porro dolore aperiam hic laboriosam dignissimos dolor aliquam fugiat reprehenderit repellendus sapiente, officia similique laborum pariatur natus.
+            Todo elemento visível na tela, dentro de um site, é uma caixa, e uma caixa pode ser colocada dentro de outro criando uma hierarquia e isso se chama ANINHAMENTO.
         </p>
+        <P>
+            As caixas têm tamanhos específicos e esse tamanho é especificado e, dias medidas muityo importantes:
+        </P>
+
+        <ul>
+            <li>Height- Altura</li>
+            <li>Width- Largura</li>
+        </ul>
+
+        <h2>
+            Outras medidas:
+        </h2>
+
+        <ul>
+            <li>
+                Border - Borda (Linha que circunda entre o conteúdo). Dentro do elementi.
+            </li>
+            <li> 
+                Padding - Preenchimento da borda para dentro (espaçõ externo entre o border e o conteúdo)
+            </li>
+            <li> 
+                Margin- Margem (Traçado da borda para fora do elemento)
+            </li>
+            <li>
+                Outline - Contorno (Encontra-se entre a borda e a margin só que dentro da margem). Fora do elemento.
+            </li>
+        </ul>
 
         <h1>
             Tipos de caixa
@@ -28,41 +93,55 @@
 
             <h2>
                 Box- level:
-             </h2>
+            </h2>
 
              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga qui sint impedit recusandae laboriosam, commodi vero in magni magnam aut molestias rerum? Culpa sed temporibus ea dolores doloribus asperiores nesciunt.
-                <li> div </li>
-                <li> h1 - h5 </li>
-                <li> p </li>
-                <li> main </li>    
-                <li> header </li>
-                <li> nav </li>
-                <li> article </li> 
-                <li> aside </li>
-                <li> footer </li>
-                <li> form </li>
-                <li> video </li>
+               O elemento do tipo box- level sempre se inicia em uma linha nova, sempre ocupa a largurta total (100%) da tela e depois que exibir esse box ele vai pular para a linha de baixo e ai sim iniciar outros boxs.
             </p>
-
+            <p>
+                Sempre que usar display: block, ele será um elemento do tipo box- level.
+            </p>
+                <ul>
+                    <li> div </li>
+                    <li> h1 - h5 </li>
+                    <li> p </li>
+                    <li> main </li>
+                    <li> header </li>
+                    <li> nav </li>
+                    <li> article </li>
+                    <li> aside </li>
+                    <li> footer </li>
+                    <li> form </li>
+                    <li> video </li>
+                </ul>
+            
             <h2>
                 Inline-level:
             </h2>
+
              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab nemo corrupti ut quo voluptate omnis dicta non deserunt est temporibus vel deleniti amet, ullam id sequi eligendi eum ea.
-                <li> span </li>
-                <li> a </li>
-                <li> code </li>
-                <li> small </li> 
-                <li> strong </li>
-                <li> em </li>
-                <li> sup - sub </li>
-                <li> label </li>
-                <li> button </li>
-                <li> imput </li>
-                <li> select </li>
+                Inicia ao final do conteúdo, não quebra linha, não ocupa a largura total da tela e o conteúdo continua imediatamente após o fim da box- inline-level.
             </p>
-            <h1>Tags de agrupamento semântico</h1>
+            <p>
+                Sempre que usar display: inline- block, ele será um elemento do tipo box- inline-level.
+            </p>
+
+                <ul>
+                    <li> span </li>
+                    <li> a </li>
+                    <li> code </li>
+                    <li> small </li>
+                    <li> strong </li>
+                    <li> em </li>
+                    <li> sup - sub </li>
+                    <li> label </li>
+                    <li> button </li>
+                    <li> imput </li>
+                    <li> select </li>
+                </ul>
+            <h1>
+                Tags de agrupamento semântico
+            </h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ut placeat quia, unde animi recusandae omnis quam perferendis, accusamus quasi aperiam ullam consectetur doloremque, consequuntur illum explicabo atque! Eligendi, corrupti? </p>
             <h2> Header </h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
@@ -78,12 +157,39 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
             <h2> Footer </h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
-        <h1>Sombra nas caixas.</h1>
-        <h1>Caixas com vétices arredondados.</h1>
-        <h1>Bordas decoradas.</h1>
-    </main>
+        <h1>
+            Sombra nas caixas.
+        </h1>
+        <h2>
+            Lorem ipsum
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus earum? Pariatur alias sunt et explicabo labore eveniet a quae sequi! Fuga dolorem labore autem architecto accusamus voluptatum quibusdam sequi.
+        </p>
+        <h1>
+            Caixas com vétices arredondados.
+        </h1>
+        <h2>
+            Lorem ipsum
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus earum? Pariatur alias sunt et explicabo labore eveniet a quae sequi! Fuga dolorem labore autem architecto accusamus voluptatum quibusdam sequi.
+        </p>
+        <h1>
+            Bordas decoradas.
+        </h1>
+        <h2>
+            Lorem ipsum
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus earum? Pariatur alias sunt et explicabo labore eveniet a quae sequi! Fuga dolorem labore autem architecto accusamus voluptatum quibusdam sequi.
+        </p>
+
     <footer>
-        <a href="#">Link</a>
+        <a href="#">Link Curso em Vídeo.</a>
     </footer>
+
+    </main>
+  
 </body>
 </html>
