@@ -8,54 +8,93 @@
 </head>
 <style>
     body{
+        font-family: Arial, Helvetica, sans-serif;
         background-color: rgba(100, 148, 237, 0.491);
         text-align: justify;
         text-indent: 20px;
+        margin: 0px;
     }
     main{
         background-color: white;
-        width: 1300px;
-        margin: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    article{
+        background-color: rgba(117, 139, 181, 0.363);
+        padding: 5px;
+    }
+    article > aside{
+        background-color: rgba(117, 139, 181, 0.822);
+        text-align: right;
     }
     header{
+        background-color: rgba(101, 119, 152, 0.822);
         padding: 10px;
+        margin: 10px;
     }
-    h1{
-        background-color: rgba(100, 148, 237, 0.491);
+    header>h1{
+        color: white;
+        width: 300px;
         text-align: center;
-        height: 40px;
-        width: 700px;
-
-        border: 2px solid blue;
-
-        padding: 10px 20px;
-
-        margin: 20px auto 40px auto;
-
-        outline: 2px dashed rgba(0, 0, 255, 0.572);
-    }
-    a{
-        background-color:white;
-        text-align: center;
-
-        padding: 5px auto 30px auto;
-
-        margin: auto;
+        height: 90px;
+        margin: 40px auto auto auto;
 
     }
-    p{
-        padding: 0px 20px 5px 20px;
+    nav{
+        background-color: rgb(255, 254, 254);
+        padding: 3px;  
     }
+    nav > a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+
+    nav > a:hover{
+        text-decoration: underline;
+        background-color: rgba(117, 139, 181, 0.614);
+    }
+
+footer{
+    background-color: rgba(101, 119, 152, 0.822);
+    padding: 4px;
+    margin: 0px;
+    text-align: center;
+}
+footer> a{
+    background-color: rgba(101, 119, 152, 0.822);
+    text-decoration: none;
+    color:white;
+}
+
+footer>a:hover{
+    text-decoration: underline;
+}
+footer> p{
+    margin: 0px;
+}
 
 </style>
 <body>
-    <main>
         <header>
             <h1>
                 Modelo de caixa
             </h1>
+            <nav>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+            </nav>
         </header>
-
+<main>
+    <Section>
+        <h1>
+            Medidas:
+        </h1>
         <p>
             Todo elemento visível na tela, dentro de um site, é uma caixa, e uma caixa pode ser colocada dentro de outro criando uma hierarquia e isso se chama ANINHAMENTO.
         </p>
@@ -67,10 +106,6 @@
             <li>Height- Altura</li>
             <li>Width- Largura</li>
         </ul>
-
-        <h2>
-            Outras medidas:
-        </h2>
 
         <ul>
             <li>
@@ -86,15 +121,14 @@
                 Outline - Contorno (Encontra-se entre a borda e a margin só que dentro da margem). Fora do elemento.
             </li>
         </ul>
-
+    </Section>
+    <section>
         <h1>
             Tipos de caixa
         </h1>
-
             <h2>
                 Box- level:
             </h2>
-
              <p>
                O elemento do tipo box- level sempre se inicia em uma linha nova, sempre ocupa a largurta total (100%) da tela e depois que exibir esse box ele vai pular para a linha de baixo e ai sim iniciar outros boxs.
             </p>
@@ -113,19 +147,16 @@
                     <li> footer </li>
                     <li> form </li>
                     <li> video </li>
-                </ul>
-            
+                </ul>   
             <h2>
                 Inline-level:
             </h2>
-
              <p>
                 Inicia ao final do conteúdo, não quebra linha, não ocupa a largura total da tela e o conteúdo continua imediatamente após o fim da box- inline-level.
             </p>
             <p>
                 Sempre que usar display: inline- block, ele será um elemento do tipo box- inline-level.
             </p>
-
                 <ul>
                     <li> span </li>
                     <li> a </li>
@@ -139,57 +170,102 @@
                     <li> imput </li>
                     <li> select </li>
                 </ul>
+            </section>
+            <section>
             <h1>
-                Tags de agrupamento semântico
+                Grouping tags semânticas.
             </h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ut placeat quia, unde animi recusandae omnis quam perferendis, accusamus quasi aperiam ullam consectetur doloremque, consequuntur illum explicabo atque! Eligendi, corrupti? </p>
-            <h2> Header </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
-            <h2> Nav </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
-            <h2> Main </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
-            <h2> Section </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
-            <h2> Article </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
-            <h2> Aside </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
-            <h2> Footer </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt velit repellendus provident quae, nulla necessitatibus iusto maxime aut, iure, unde aliquid reiciendis expedita eius officia laboriosam deleniti debitis est.</p>
+            <article>
+                <h1>Curiosidade sobre HTML4 e HTML5</h1>
+                <p>
+                    As Tags de agrupamento sempre foram as DIVs (box-level) e SPANs (inline-level), porém com o HTML 5 foram introduzidas a as Tags de agrupamento semântico/ Divs semânticas, que auxiliam nos mecanismos de buscas e organização do seu conteúdo na tela.
+                </p>
+                <aside>
+                    <P>Texto retirado curso em vídeo com Gustavo Guanabara.</P>
+                </aside>
+            </article>
+            <h2> 
+                Header  
+            </h2>
+            <p>
+                Cria áreas relativas ao cabeçalho. Pode ser o cabeçakho principal de um site ou até mesmo o cabaçalho de uma seção ou artigo. Normalmente inclui título as tags H1 - H6 e subtítulo. Podem também conter menus de navegação.
+            </p>
+            <h2> 
+                Nav 
+            </h2>
+            <p>
+                Define uma área que possui os links de navegação pela estrutura de páginas que vãp compor o website.O nav pode estar dentro do header.
+            </p>
+            <h2>
+                Main 
+            </h2>
+            <p>
+                É um agrupador usado para delimitar o conteúdo principal do site. Normalmente concentra as seções, artigos e conteúdos periféricos.
+            </p>
+            <h2>
+                 Section 
+            </h2>
+            <p>
+                Cria seções para sua página. Pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a W3C "Uma seção é um agrupamento temático de conteúdo, tipicamente com um cabeçalho." 
+            </p>
+            <h2> 
+                Article 
+            </h2>
+            <p>
+                É um elemente que vai conter um conteúdo que pode ser lido de forma independete e dizem respoeto a um mesmo assunto. Podemos usar o article para deilimitar um post de blog ou forum, uma notícia etc.
+            </p>
+            <h2> 
+                Aside 
+            </h2>
+            <p>
+                Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo aside está podicionado ao lado de uma determinado texto ou até mesmo no meio dele, são conteúdos como curiosidades sobre o conteúdo. 
+            </p>
+            <article>
+                <h2>Grouping Tag dentro de Grouping Tag </h2>
+                <p>
+                    OBS: É  possível ter um ou mais article dentro de uma section ou até mesm criar section  dentro de um article. Não existe limitação quanto a isso.
+                </p>
+            </article>
+            <h2> 
+                Footer 
+            </h2>
+            <p>
+                O radapé é conteúdo que não faz parte diretamente do conteúdo, nem é um conteúdo periférico, mas possui informaççoes sobre autoria do conteúdo, links adicionais, mapa do site, documento relacionados.
+            </p>
+        </section>
         <h1>
             Sombra nas caixas.
         </h1>
-        <h2>
-            Lorem ipsum
-        </h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus earum? Pariatur alias sunt et explicabo labore eveniet a quae sequi! Fuga dolorem labore autem architecto accusamus voluptatum quibusdam sequi.
+            Utiliza-se a tag box-shadow e uma sequência de shorthands.  
         </p>
-        <h1>
+        <p>
+            box-shadow: (1px) deslocamento de
+        </p>
+
+        <h2>
             Caixas com vétices arredondados.
-        </h1>
-        <h2>
-            Lorem ipsum
         </h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus earum? Pariatur alias sunt et explicabo labore eveniet a quae sequi! Fuga dolorem labore autem architecto accusamus voluptatum quibusdam sequi.
-        </p>
-        <h1>
-            Bordas decoradas.
-        </h1>
-        <h2>
             Lorem ipsum
-        </h2>
+        </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus earum? Pariatur alias sunt et explicabo labore eveniet a quae sequi! Fuga dolorem labore autem architecto accusamus voluptatum quibusdam sequi.
         </p>
 
-    <footer>
-        <a href="#">Link Curso em Vídeo.</a>
-    </footer>
+        <h2>
+            Bordas decoradas.
+        </h2>
+        <p>
+            Lorem ipsum
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus earum? Pariatur alias sunt et explicabo labore eveniet a quae sequi! Fuga dolorem labore autem architecto accusamus voluptatum quibusdam sequi.
+        </p>
 
     </main>
-  
+    <footer>
+        <p><a href="#">Link Curso em Vídeo.</a></p>
+    </footer>
 </body>
 </html>
